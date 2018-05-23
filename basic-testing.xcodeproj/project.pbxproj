@@ -12,8 +12,13 @@
 		054816F320B5DC80007642A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054816F120B5DC80007642A0 /* Main.storyboard */; };
 		054816F520B5DC80007642A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054816F420B5DC80007642A0 /* Assets.xcassets */; };
 		054816F820B5DC80007642A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054816F620B5DC80007642A0 /* LaunchScreen.storyboard */; };
-		0548170320B5DC81007642A0 /* basic_testingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0548170220B5DC81007642A0 /* basic_testingTests.swift */; };
 		0548170E20B5DC81007642A0 /* basic_testingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0548170D20B5DC81007642A0 /* basic_testingUITests.swift */; };
+		0548171C20B5DD8B007642A0 /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0548171B20B5DD8B007642A0 /* NetworkTests.swift */; };
+		0548171F20B5DDCE007642A0 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0548171E20B5DDCE007642A0 /* Networking.swift */; };
+		0548172220B5E644007642A0 /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0548172120B5E644007642A0 /* Ranking.swift */; };
+		0548173020B5FC1E007642A0 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0548172F20B5FC1E007642A0 /* Shop.swift */; };
+		0548173220B5FDBA007642A0 /* CartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0548173120B5FDBA007642A0 /* CartTests.swift */; };
+		0548173420B6031E007642A0 /* ShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0548173320B6031E007642A0 /* ShopTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +47,16 @@
 		054816F720B5DC80007642A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		054816F920B5DC80007642A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		054816FE20B5DC81007642A0 /* basic-testingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "basic-testingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0548170220B5DC81007642A0 /* basic_testingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basic_testingTests.swift; sourceTree = "<group>"; };
 		0548170420B5DC81007642A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0548170920B5DC81007642A0 /* basic-testingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "basic-testingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0548170D20B5DC81007642A0 /* basic_testingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basic_testingUITests.swift; sourceTree = "<group>"; };
 		0548170F20B5DC81007642A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0548171B20B5DD8B007642A0 /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
+		0548171E20B5DDCE007642A0 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		0548172120B5E644007642A0 /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
+		0548172F20B5FC1E007642A0 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		0548173120B5FDBA007642A0 /* CartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTests.swift; sourceTree = "<group>"; };
+		0548173320B6031E007642A0 /* ShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,8 @@
 		054816EC20B5DC80007642A0 /* basic-testing */ = {
 			isa = PBXGroup;
 			children = (
+				0548172720B5F5E0007642A0 /* Shop */,
+				0548171D20B5DDB7007642A0 /* Networking */,
 				054816ED20B5DC80007642A0 /* AppDelegate.swift */,
 				054816EF20B5DC80007642A0 /* ViewController.swift */,
 				054816F120B5DC80007642A0 /* Main.storyboard */,
@@ -110,7 +122,9 @@
 		0548170120B5DC81007642A0 /* basic-testingTests */ = {
 			isa = PBXGroup;
 			children = (
-				0548170220B5DC81007642A0 /* basic_testingTests.swift */,
+				0548171B20B5DD8B007642A0 /* NetworkTests.swift */,
+				0548173120B5FDBA007642A0 /* CartTests.swift */,
+				0548173320B6031E007642A0 /* ShopTests.swift */,
 				0548170420B5DC81007642A0 /* Info.plist */,
 			);
 			path = "basic-testingTests";
@@ -123,6 +137,31 @@
 				0548170F20B5DC81007642A0 /* Info.plist */,
 			);
 			path = "basic-testingUITests";
+			sourceTree = "<group>";
+		};
+		0548171D20B5DDB7007642A0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0548172020B5E639007642A0 /* Models */,
+				0548171E20B5DDCE007642A0 /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0548172020B5E639007642A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0548172120B5E644007642A0 /* Ranking.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0548172720B5F5E0007642A0 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				0548172F20B5FC1E007642A0 /* Shop.swift */,
+			);
+			path = Shop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0548171F20B5DDCE007642A0 /* Networking.swift in Sources */,
 				054816F020B5DC80007642A0 /* ViewController.swift in Sources */,
+				0548173020B5FC1E007642A0 /* Shop.swift in Sources */,
+				0548172220B5E644007642A0 /* Ranking.swift in Sources */,
 				054816EE20B5DC80007642A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +307,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0548170320B5DC81007642A0 /* basic_testingTests.swift in Sources */,
+				0548171C20B5DD8B007642A0 /* NetworkTests.swift in Sources */,
+				0548173220B5FDBA007642A0 /* CartTests.swift in Sources */,
+				0548173420B6031E007642A0 /* ShopTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

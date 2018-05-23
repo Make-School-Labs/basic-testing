@@ -1,5 +1,5 @@
 //
-//  basic_testingTests.swift
+//  ShopTests.swift
 //  basic-testingTests
 //
 //  Created by Eliel Gordon on 5/23/18.
@@ -7,9 +7,8 @@
 //
 
 import XCTest
-@testable import basic_testing
 
-class basic_testingTests: XCTestCase {
+class ShopTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
