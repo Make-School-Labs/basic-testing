@@ -9,8 +9,8 @@
 import Foundation
 
 protocol ShopType {
-    associatedtype Product
-    var products: [Product] {get set}
+    associatedtype Merchandise
+    var products: [Merchandise] {get set}
     var cart: Cart {get set}
     
     func checkout()

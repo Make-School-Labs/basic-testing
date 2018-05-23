@@ -10,7 +10,7 @@ import XCTest
 @testable import basic_testing
 
 class FibMeasureTests: XCTestCase {
-    let workIterations = [2, 4, 5, 20, 13, 30, 50, 25]
+    let workIterations = [2, 4, 5, 20, 13, 25]
     var fibonacciResults: [Int]!
     
     override func setUp() {
