@@ -24,6 +24,7 @@ enum CouponCode {
 
 protocol Cartable {
     associatedtype Item
+    var items: [Item] {get set}
     var taxPercent: Int {get set}
     var discountPercent: Int {get set}
     var couponCode: CouponCode {get set}
