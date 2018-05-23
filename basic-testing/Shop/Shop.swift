@@ -20,6 +20,7 @@ enum CouponCode {
     case basic(discount: Int)
     case silver(discount: Int)
     case gold(discount: Int)
+    case none
 }
 
 protocol Cartable {
