@@ -10,10 +10,12 @@ import XCTest
 @testable import basic_testing
 
 class CartTests: XCTestCase {
+    var cart: Cart!
     
     override func setUp() {
         super.setUp()
         
+        cart = Cart()
     }
     
     override func tearDown() {
@@ -21,11 +23,11 @@ class CartTests: XCTestCase {
     }
     
     // TODO: Test creating empty shopping cart
-    func testCreateEmptyShoppingCart() {
+    func testCreateEmptyShoppingCartHasNoItems() {
         
     }
     
-    // TODO: Test Creating line items have the correct total 
+    // TODO: Test Creating line items have the correct total from price and quantity
     func testLineItemTotal() {
         
     }

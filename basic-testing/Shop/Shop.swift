@@ -29,7 +29,7 @@ protocol Cartable {
     var couponCode: CouponCode {get set}
     
     func checkout()
-    // Total line items without tax
+    // Total line items without tax and coupon
     func subTotal() -> Double
     // Total line items with tax minus discount
     func total() -> Double
