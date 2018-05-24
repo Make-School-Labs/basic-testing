@@ -16,11 +16,11 @@ protocol ShopType {
     func checkout()
 }
 
-enum CouponCode {
-    case basic(discount: Int)
-    case silver(discount: Int)
-    case gold(discount: Int)
-    case none
+enum CouponCode: Int {
+    case none = 0
+    case basic = 5
+    case silver = 10
+    case gold = 25
 }
 
 protocol Cartable {
@@ -35,9 +35,9 @@ protocol Cartable {
     func subTotal() -> Double
     // Total line items with tax minus discount
     func total() -> Double
-    func add(items: Item...)
+    mutating func add(items: Item...)
     func numberOfItems() -> Int
-    func addCoupon(code: CouponCode) -> Bool
+    mutating func addCoupon(code: CouponCode) -> Bool
 }
 
 struct LineItem {
