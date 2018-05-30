@@ -23,13 +23,13 @@ enum CouponCode: Int {
     case gold = 25
 }
 
-protocol Cartable {
+protocol CartType {
     associatedtype Item
     var items: [Item] {get set}
     var taxPercent: Int {get set}
-    var discountPercent: Int {get set}
     var couponCode: CouponCode {get set}
     
+    // Empty implementation, no need to implement checkout
     func checkout()
     // Total line items without tax and coupon
     func subTotal() -> Double
@@ -37,9 +37,13 @@ protocol Cartable {
     func total() -> Double
     mutating func add(items: Item...)
     func numberOfItems() -> Int
+    // Assumes coupon code entered is correct
     mutating func addCoupon(code: CouponCode) -> Bool
 }
 
+// TODO: Line items belong to a cart
+// Joe can purchase 5x Coca Cola.
+// There will be one line item, Coca Cola with a quantity of 5
 struct LineItem {
     // TODO: Fill me in
     // Should have id, quantity and price and name
@@ -54,10 +58,13 @@ struct LineItem {
 
 
 // TODO: Fill in. Product a shop can sell
-// id, name, price
+// Shops have `Products`
+// Products may have id, name, price
 struct Product {}
 
 // TODO: Fill in implementation
+// Cart inherits from `CartType`
 struct Cart {}
+// Shop inherits from `ShopType`
 struct Shop {}
 
